@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-img{
+    display: none;
+}
+.information-mobile{
+    display: none;
+}
+.mobile-show{
+    display: none!important;
+}
+.main-wrapper{
+    margin:0 11.7%;
+    overflow: hidden;
+}
+.content-wrapper{
+    margin:0 7%;
+}
+/*2.HEADER*/
+header{
+    background-color: #c10c29;
+    padding: 12px 0 25px 0;
+    font-family: Georgia;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: 100;
+}
+header .logo{
+    /*margin-right: 80px;*/
+    float: left;
+    width: 20%;
+}
+header .menu{
+    float: right;
+    width: 80%;
+}
+header .menu hr{
+    opacity: 0.7;
+}
+header .menu nav ul, header .menu .top-menu ul{
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+header .menu nav li, header .menu .top-menu  li{
+     list-style: none;
+     display: inline-block;
+    margin-top: 30px;
+ }
+header .menu .top-menu  li{
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+header .menu nav li a, header .menu .top-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Georgia;
+}
+header .menu nav li:last-child{
+    margin-right: 0px;
+}
+
+header .top-menu{
+    overflow: hidden;
+}
+header .top-menu .smoll-menu{
+    float: left;
+    width: 25%;
+}
+header .top-menu .information{
+    float: right;
+}
+header .information .block{
+    float: left;
+    color: #fff;
+    margin-right: 45px;
+    padding-left: 25px;
+    position: relative;
+}
+header .information .block:last-child{
+    margin-right: 0px;
+}
+header .information .block img{
+    position: absolute;
+    left:0px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*3.SLIDER*/
+.slider{
+    width:100%;
+    height: 100vh;
+    color: #fff;
+    font-family: Georgia;
+
+
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.swiper-slide p.title{
+    font-size: 45px;
+    text-transform: uppercase;
+
+}
+.swiper-slide p.desk{
+    font-size: 27px;
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color:#000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+}
+.swiper-pagination-bullet-active {
+    color:#fff;
+    background: #007aff;
+}
+.wrapper-text{
+    width:54%;
+    margin:0 auto;
+    padding-top: 350px;
+}
+.wrapper-text p.desk{
+    padding-top: 60px;
+}
+/*4. TRAVEL BLOCK*/
+
+.title-desk{
+    padding-top: 100px;
+    padding-bottom: 85px;
+    color: #000;
+    font-family: Georgia;
+    text-align: center;
+}
+.title-desk .title-block{
+    font-size: 41px;
+}
+.title-desk .desk-block{
+    font-size: 22px;
+    padding-top: 20px;
+}
+.block-travel .blocks{
+    /*display: inline-flex;*/
+    /*flex-direction:row;*/
+    /*justify-content: space-between;*/
+    width: 100%;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.block-travel .blocks .block{
+    float: left;
+    width: 23%;
+    box-shadow: 0px 0px 5px -1px #000000;
+    margin-right: 2.5%;
+}
+.block-travel .blocks .block:last-child{
+    margin-right: 0%;
+}
+.photo-travel{
+    position: relative;
+    height: 260px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.photo-travel .likes{
+    font-family: Georgia;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 15px 15px 10px 15px;
+    box-sizing: border-box;
+}
+.photo-travel .likes div{
+    z-index: 1;
+}
+.photo-travel .likes:after{
+   content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+.licks-namber li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+.deskription {
+    font-family: Georgia;
+    padding: 40px 15px 20px 15px;
+    box-sizing: border-box;
+}
+.name-and-country{
+     color: black;
+     position: relative;
+     font-size: 17px;
+    margin-bottom: 35px;
+ }
+.name-and-country p.name{
+    padding-right: 150px;
+}
+.name-and-country hr{
+  margin: 10px 0;
+    color: silver;
+}
+.price{
+    color: white;
+    border-bottom: 60px solid #252e37;
+    border-left: 60px solid transparent;
+    height: 0;
+    width: 100px;
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+.price .price-information{
+    padding-top: 17px;
+    font-size: 15px;
+    margin-left: -6px;
+}
+.price .price-information img{
+    margin-right: 7px;
+}
+.information-travel{
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.information-travel p{
+   padding-right: 155px;
+}
+.information-travel .button{
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+    right: 0px;
+    top:0px;
+    width: 150px;
+    padding: 10px 0px;
+    color:#000;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid silver;
+}
+.information-travel .button:hover{
+    background-color: #cf1327;
+    color:#fff;
+    border: none;
+}
+div.more{
+    text-align: center;
+}
+div.more button{
+    background-color: transparent;
+    border:1px solid silver;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: #252e37;
+    font-size: 16px;
+    font-family: Georgia;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 60px;
+
+}
+div.more button span{
+    color:silver;
+    display: inline-block;
+    margin-left:10px;
+}
+/*5.FOOTER*/
+footer{
+    background-image: url("../img/Dark1.jpg");
+    color:#fff;
+    font-family: Georgia;
+    overflow: hidden;
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+    font-family: Georgia;
+}
+footer .content-wrapper {
+    overflow: hidden;
+    padding-top: 55px;
+ }
+footer .content-wrapper div{
+    float: left;
+    width: 32%;
+    height: 310px;
+    margin-right: calc(2% - 3px);
+    border:1px solid silver;
+
+}
+footer .content-wrapper div:last-child{
+    margin-right: 0;
+}
+footer .footer-menu{
+    padding-left: 7%;
+    padding-right: 4%;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+footer .footer-menu li{
+    margin-bottom: 7px;
+}
+footer .soc-information{
+    padding-left: 7%;
+    padding-top: 3%;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+footer .soc-information p{
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 15px;
+}
+footer .soc-information hr{
+
+    margin-bottom: 10px;
+}
+footer .soc-information p img{
+     position: absolute;
+     left:0px;
+     top:10px;
+ }
+footer .soc-information p.director{
+    padding-left: 85px;
+    padding-top: 17px;
+}
+
+footer .soc-network{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+footer .soc-network p{
+    text-align: center;
+}
+
+footer .soc-network p.title-soc{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+footer .soc-network p.soc{
+    margin-top: 40px;
+}
+footer .soc-network p.soc a img{
+    margin-right: 10px;
+}
+footer .soc-network p.soc a:last-child img{
+    margin-right: 0px;
+}
+footer p.end{
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 1401px){
+
+}
+@media (min-width: 1200px) and (max-width: 1400px ){
+    .main-wrapper {
+        margin: 0 7%;
+    }
+    .swiper-slide p.title {
+        font-size: 35px;
+    }
+    .swiper-slide p.desk {
+        font-size: 22px;
+    }
+    .content-wrapper {
+        margin: 0 5%;
+    }
+    .price {
+        top: -74px;
+        right: -15px;
+    }
+    .name-and-country {
+        margin-bottom: 15px;
+    }
+    .name-and-country p.name{
+    padding-right: 0px;
+    }
+    .information-travel {
+        padding-bottom: 50px;
+    }
+    .information-travel p {
+        padding-right:0px;
+    }
+    .information-travel .button {
+        top: 47px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px ) {
+    .main-wrapper {
+        margin: 0 7%;
+    }
+    .swiper-slide p.title {
+        font-size: 35px;
+    }
+    .swiper-slide p.desk {
+        font-size: 22px;
+    }
+    .content-wrapper {
+        margin: 0 5%;
+    }
+    .price {
+        top: -74px;
+        right: -15px;
+    }
+    .name-and-country {
+        margin-bottom: 15px;
+    }
+    .information-travel {
+        padding-bottom: 50px;
+    }
+    .information-travel .button {
+        top: 47px;
+    }
+    .information-travel p {
+        padding-right:0px;
+    }
+    .name-and-country p.name{
+        padding-right: 0px;
+    }
+    .logo img{
+        width: 80%;
+    }
+    .menu{
+        font-size: 13px;
+    }
+    .information{
+        padding-top: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px ) {
+    .information-travel p {
+        padding-right:0px;
+    }
+    .name-and-country p.name{
+        padding-right: 0px;
+    }
+    .main-wrapper {
+        margin: 0 7%;
+    }
+    .swiper-slide p.title {
+        font-size: 24px;
+    }
+    .swiper-slide p.desk {
+        font-size: 18px;
+    }
+    .content-wrapper {
+        margin: 0 5%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    header .menu {
+        width: 76%;
+    }
+    header .top-menu .smoll-menu {
+        display: none;
+    }
+    .information{
+        font-size: 13px;
+        padding: 15px 0;
+    }
+    nav{
+        display: none;
+    }
+    header .menu nav ul, header .menu .top-menu ul {
+        display: block;
+    }
+    header .menu nav li, header .menu .top-menu li {
+        display: list-item;
+        list-style: none;
+        text-align: center;
+    }
+    .mobile-show{
+        display: block!important;
+    }
+    .menu-img{
+        display: block;
+        position: absolute;
+        right:70px;
+        top:80px;
+        cursor: pointer;
+    }
+    .block-travel .blocks .block {
+        width: 47%;
+        margin-bottom: 50px;
+    }
+    .block-travel .blocks {
+        padding-left: 17px;
+    }
+    .number-people{
+        font-size: 13px;
+    }
+    .time{
+        font-size: 11px;
+    }
+    footer .soc-information{
+        font-size: 15px;
+        padding-left: 4%;
+    }
+    footer .soc-network {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .wrapper-text {
+        width: 75%;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 767px ) {
+    .information-travel p {
+        padding-right:0px;
+    }
+    .name-and-country p.name{
+        padding-right: 0px;
+    }
+    .information-travel p {
+        padding-right:0px;
+    }
+    .name-and-country p.name{
+        padding-right: 0px;
+    }
+    .main-wrapper {
+        margin: 0 7%;
+    }
+    .swiper-slide p.title {
+        font-size: 24px;
+    }
+    .swiper-slide p.desk {
+        font-size: 18px;
+    }
+    .content-wrapper {
+        margin: 0 5%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    header .menu {
+        width: 100%;
+    }
+    header .top-menu .smoll-menu {
+        display: none;
+    }
+    .information{
+        font-size: 13px;
+        padding: 15px 0;
+    }
+    nav{
+        display: none;
+    }
+    header .menu nav ul, header .menu .top-menu ul {
+        display: block;
+    }
+    header .menu nav li, header .menu .top-menu li {
+        display: list-item;
+        list-style: none;
+        text-align: center;
+    }
+    .mobile-show{
+        display: block!important;
+    }
+    .menu-img{
+        display: block;
+        position: absolute;
+        right:30px;
+        top:20px;
+        cursor: pointer;
+    }
+    footer .content-wrapper div {
+        width: 100%;
+    }
+    footer .footer-menu {
+        text-align: center;
+        padding-top: 9%;
+    }
+    footer .footer-menu li {
+        list-style: none;
+    }
+    footer .soc-information {
+        padding-top: 9%;
+    }
+    footer .soc-network {
+        padding-top: 17%;
+    }
+    .block-travel .blocks .block {
+        width: 99%;
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+    .block-travel .blocks {
+        padding-left: 3px;
+    }
+    .photo-travel {
+        height: 350px;
+    }
+    .wrapper-text {
+        width: 92%;
+        margin: 0 auto;
+        padding-top: 250px;
+    }
+
+    .information div{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .information{
+        width: 100%;
+        display: block;
+    }
+    header hr{
+        display: none;
+    }
+    .desk-mobile{
+        display: none;
+    }
+    information-mobile{
+        display: block;
+    }
+    .title-desk .title-block {
+        font-size: 32px;
+    }
+    .title-desk .desk-block {
+        font-size: 16px;
+    }
+    .information-travel {
+        padding-bottom: 50px;
+    }
+    .information-travel p {
+        padding-right:0px;
+    }
+    .information-travel .button {
+        top: 47px;
+    }
+    .name-and-country {
+        font-size: 13px;
+    }
+}
